@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Usia</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2 class="text">{{title}}<h2>
+    <form method="POST" action="/hitung_usia">
+        <label>Contoh 2007</label>
+        <input type="number" name="tahun_lahir" placeholder="Masukan Tahun Kelahiran" class="tahunLahir">
+        <button type="submit" class="btnCheck" onclick="result()">Cek Usia</button>
+    </form>
+    {% if usia is not none %}
+    <p class="output">Usia Anda Saat Ini adalah {{usia}} tahun</p>
+    <p>{{ai_output}}</p>
+    {% endif %}
+    <a href="/about">About</a>
+    <a href="/">Kembali</a>
+</body>
+</html>

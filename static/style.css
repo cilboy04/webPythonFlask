@@ -1,0 +1,105 @@
+*, html, body {
+margin: 0px;
+padding: 0px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text {
+  padding-top: 15%;
+  padding-bottom: 2%;
+  font-size:2em;
+  text-align: center;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+background-color:black;
+}
+.tahunLahir {
+background-color:blue;
+height:40px;
+width:40%;
+border-radius: 6px;
+color:white;
+text-align: center;
+font-size: 16px;
+font-weight: 600;
+}
+.btnCheck {
+padding: 10px;
+margin: 10px 0;
+height:45px;
+width:40%;
+background-color:#333333;
+color:white;
+border-radius:8px;
+cursor: pointer;
+font-size: 16px;
+}
+.btnCheck:hover {
+background-color:red;
+}
+.output{
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  margin: 0.6rem 0;
+  text-align: center;
+  }
+p {
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 0.6rem 0;
+}
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin:0;}
+label {
+color: white;
+font-size: 1rem;
+margin-bottom: 0.6rem;}
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    }
+a:hover {
+    text-decoration: underline;
+    }
+@media only screen and (max-width: 476px) {
+  .text {
+    font-size: 2em;
+  }
+  label {
+    font-size: 1.2em;
+  }
+  .tahunLahir {
+    height: 35px;
+    width: 70%;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+  .btnCheck {
+    height: 36px;
+    width: 70%;
+    font-size: 15px;
+    border-radius: 10px;
+    font-size: medium;
+  }
+}
