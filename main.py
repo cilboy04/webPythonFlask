@@ -1,10 +1,14 @@
+import os
+from dotenv import load_dotenv
 from groq import Groq
 from flask import Flask, render_template, request
 from datetime import datetime
 
+load_dotenv()
+
 app = Flask(__name__)
 
-AI_KEY = "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"
+AI_KEY = os.getenv("GROQ_API_KEY")
 
 client = Groq(api_key=AI_KEY)
 
